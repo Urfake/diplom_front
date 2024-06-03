@@ -12,28 +12,28 @@
             alt=""
         /></a>
         <br />
-        <router-link
+        <!-- <router-link
           class="sub-about-mob"
           v-show="dropdown"
           @click="burger = !burger"
           to="/flora"
           >Флора</router-link
-        >
+        > -->
         <br />
-        <router-link
+        <!-- <router-link
           class="sub-about-mob"
           v-show="dropdown"
           @click="burger = !burger"
           to="/fauna"
           >Фауна</router-link
-        >
+        > -->
         <br />
         <router-link
           class="sub-about-mob"
           v-show="dropdown"
           @click="burger = !burger"
           to="/about-us"
-          >История</router-link
+          >О нас</router-link
         >
         <br />
         <router-link @click="burger = !burger" to="/services"
@@ -106,14 +106,14 @@
           />
         </div>
       </div>
-      <div class="logo">
+      <!-- <div class="logo">
         <img
           style="z-index: 2; position: relative"
-          :src="require('./assets/img/icons/logo.png')"
+          :src="require('./assets/img/icons/logo1.png')"
           @click="$router.push('/')"
           alt="logo"
         />
-      </div>
+      </div> -->
       <ul class="green font">
         <li><router-link to="/">Главная</router-link></li>
         <li>

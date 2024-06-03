@@ -178,6 +178,19 @@ export default {
     DateRangeBookingObject,
     TimeBookingObject,
   },
+  created() {
+    this.objectId = this.$route.params.id;
+    axios
+      .get("http://localhost:8083/object/type/get/" + this.$route.params.id)
+      .then((response) => {
+        this.objectType = response.data.value;
+        console.log(response.data);
+      })
+      .catch((error) => {
+        console.log(error);
+        this.errored = true;
+      });
+  },
   methods: {
     openModalBooking(timeType, objects) {
       if (
@@ -197,19 +210,7 @@ export default {
       }
     },
   },
-  created() {
-    this.objectId = this.$route.params.id;
-    axios
-      .get("http://localhost:8083/object/type/get/" + this.objectId)
-      .then((response) => {
-        this.objectType = response.data.value;
-        console.log(response.data);
-      })
-      .catch((error) => {
-        console.log(error);
-        this.errored = true;
-      });
-  },
+  
 };
 </script>
 

@@ -258,6 +258,7 @@ export default {
   },
   components: {
     DateRangeBooking,
+    // eslint-disable-next-line vue/no-unused-components
     TimeBookingObject,
     TimeBooking,
   },

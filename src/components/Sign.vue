@@ -4,10 +4,10 @@
       <div v-if="show" class="modal-shadow" @click.self="closeModal">
         <div v-if="data == 'auth'" class="sign">
           <div class="inForm">
-            <img class="flower1" src="../assets/img/icons/flower3.png" alt="" />
-            <img class="flower2" src="../assets/img/icons/flower2.png" alt="" />
+            <img class="flower1" src="../assets/img/icons/table1.png" alt="" />
+            <img class="flower2" src="../assets/img/icons/table1.png" alt="" />
             <div class="logo">
-              <img src="../assets/img/icons/logo.png" alt="" />
+              <img src="../assets/img/icons/logo1.png" alt="" />
             </div>
             <p class="center signFont title">Авторизация</p>
             <form>
@@ -46,10 +46,10 @@
         </div>
         <div v-if="data == 'reg'" class="sign">
           <div class="inForm">
-            <img class="flower1" src="../assets/img/icons/flower2.png" alt="" />
-            <img class="flower2" src="../assets/img/icons/flower.png" alt="" />
+            <img class="flower1" src="../assets/img/icons/table1.png" alt="" />
+            <img class="flower2" src="../assets/img/icons/table1.png" alt="" />
             <div class="logo">
-              <img src="../assets/img/icons/logo.png" alt="" />
+              <img src="../assets/img/icons/logo1.png" alt="" />
             </div>
             <p class="center signFont title">Регистрация</p>
             <form>

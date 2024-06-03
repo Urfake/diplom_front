@@ -39,10 +39,10 @@
     </div> -->
   </div>
 
-  <div class="house1">
+  <!-- <div class="house1">
     <img src="../assets/img/main/4.png" />
-    <!-- <h4 style="color: white">ПЕРЕЙТИ НА ПРОСМОТР УСЛУГ</h4> -->
-  </div>
+    <h4 style="color: white">ПЕРЕЙТИ НА ПРОСМОТР УСЛУГ</h4>
+  </div> -->
 
   <sign ref="sign" />
 
@@ -69,13 +69,13 @@
       <h2>Галерея</h2>
       <div class="row">
         <div class="gallery-slide">
-          <img src="../assets/img/main/5.png" alt="" width="100%" />
+          <img src="../assets/img/main/11.png" alt="" width="100%" />
         </div>
         <div class="gallery-slide">
-          <img src="../assets/img/main/6.png" alt="" width="100%" />
+          <img src="../assets/img/main/22.png" alt="" width="100%" />
         </div>
         <div class="gallery-slide">
-          <img src="../assets/img/main/7.png" alt="" width="100%" />
+          <img src="../assets/img/main/33.png" alt="" width="100%" />
         </div>
       </div>
     </div>
@@ -95,7 +95,7 @@
     <div class="container">
       <div class="row">
         <div class="logo">
-          <img src="../assets/img/icons/logo.png" alt="logo" />
+          <img src="../assets/img/icons/logo1.png" alt="logo" />
           <h6>Ресторан Улуу-Тоо"</h6>
         </div>
         <div class="navigation">

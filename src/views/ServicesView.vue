@@ -63,7 +63,7 @@
     <div class="container">
       <div class="row">
         <div class="logo">
-          <img src="../assets/img/icons/logo.png" alt="logo" />
+          <img src="../assets/img/icons/logo1.png" alt="logo" />
           <h6>Ресторан Улуу-Тоо</h6>
         </div>
         <div class="navigation">

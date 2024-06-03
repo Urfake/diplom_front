@@ -1,0 +1,190 @@
+/* =============== */
+/* FAUNA */
+
+
+.fauna{
+    background-color: #CDE2D0;
+}
+
+.fauna_frame{
+    border-radius: 10px;
+} 
+
+.fauna_frame .text h1,
+.fauna_text h1{
+    color: #2F2E41;
+}
+
+.fauna_frame .text p{
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: #122330;
+}
+
+.fauna_frame .img img{
+    width: 100%;
+}
+
+.flora_img img{
+    width: 100%;
+}
+
+.fauna_text p{
+    font-weight: 500;
+    text-align: center;
+    color: #343347;
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .fauna{
+        padding-bottom: 2%;
+    }
+    .fauna_frame .text,
+    .fauna_frame .img{
+        float: unset;
+        margin: 0;
+        width: 100%;
+    }
+    .flora_img{
+        width: 85%;
+        margin: auto;
+    }
+    .fauna_frame .text{
+        padding: 5% 0 0 0;
+        text-align: center;
+    }
+    .fauna_frame .text h1,
+    .fauna_text h1{
+        margin: 0;
+        font-size: calc(0.8rem + 2vw);
+        line-height: calc(1.6rem + 2vw);
+    }
+    .fauna_frame .text p,
+    .fauna_text p{
+        font-size: calc(0.6em + 1vw);
+        line-height: calc(1rem + 1vw);
+    }
+    .fauna_text{
+        width: 85%;
+        margin: 5% auto;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .fauna{
+        padding-bottom: 2%;
+    }
+    .fauna_frame .text{
+        padding: 5% 0 0 0;
+        text-align: center;
+    }
+    .fauna_frame .text h1,
+    .fauna_text h1{
+        margin: 0;
+        font-size: calc(1.3rem + 2vw);
+        line-height: calc(1.4rem + 2vw);
+    }
+    .fauna_frame .text p,
+    .fauna_text p{
+        font-size: calc(0.7em + 1vw);
+        line-height: calc(0.9rem + 1vw);
+    }
+    .fauna_text{
+        width: 85%;
+        margin: 5% auto;
+    }
+    .flora_img{
+        width: 85%;
+        margin: auto;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .fauna{
+        padding-bottom: 1%;
+    }
+    .fauna_frame{
+        padding: 2%; 
+    }
+    .fauna_frame .text{
+        padding: 2% 0 0 0;
+    }
+    .fauna_frame .text h1,
+    .fauna_text h1{
+        margin: 0;
+        font-size: calc(1rem + 2vw);
+        line-height: calc(1.2rem + 2vw);
+    }
+    .fauna_frame .text p,
+    .fauna_text p{
+        font-size: calc(0.6em + 1vw);
+        line-height: calc(0.8rem + 1vw);
+    }
+    .fauna_text{
+        width: 85%;
+        margin: 4% auto;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .fauna{
+        width: 85%;
+        margin: auto;
+        border-radius: 10px;
+    }
+    .fauna .container{
+        width: 100%;
+    }
+    .fauna_frame{
+        width: 100%;
+        height: 35vw;
+        margin: auto;
+        padding: 0;
+    }
+    .fauna_frame .text{
+        margin: 14% 0 0 3%;
+        width: 38%;
+        float: left;
+    }
+    .fauna_frame .text h1,
+    .fauna_text h1{
+        font-size: calc(0.6rem + 2vw);
+        line-height: calc(0.7rem + 2vw);
+        text-align: start;
+    }
+    .fauna_text h1{
+        text-align: center;
+    }
+    .fauna_frame .text p{
+        text-align: start;
+        font-size: calc(0.06rem + 1vw);
+        line-height: calc(0.5rem + 1vw);
+    }
+    .fauna_frame .img{
+        width: 55%;
+        float: right;
+        margin: 3% 2%;
+    }
+    .flora_img{
+        width: 50%;
+        float: right;
+        margin: 2% 3%;
+    }
+    .fauna_text{
+        width: 80%;
+        margin: 3% auto;
+    }
+    .fauna_text p{
+        font-size: calc(0.4rem + 1vw);;
+        line-height: calc(0.8rem + 1vw);
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

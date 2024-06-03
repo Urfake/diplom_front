@@ -1,0 +1,131 @@
+.sky{
+    width: 105%;
+}
+
+.parallax{
+    position: relative;
+    min-width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    height: auto;
+}
+
+.trees{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: all 3s ease;
+}
+
+.front_mount{
+    width: 100%;
+    position: absolute;
+    bottom: -7%;
+    right: -5%;
+    transition: all 3s ease;
+}
+
+.mid_mount{
+    position: absolute;
+    width: 80%;
+    bottom: 12%;
+    left: 0;
+    transition: all 3s ease;
+}
+
+.back_mount{
+    position: absolute;
+    width: 80%;
+    right: 0;
+    bottom: 30%;
+    transition: all 3s ease;
+}
+
+.sun{
+    position: absolute;
+    width: 10%;
+    left: 10%;
+    top: 10%;
+    transition: all 3s ease;
+}
+
+.clouds{
+    position: absolute;
+    width: 110%;
+    top: 15%;
+    left: 0;
+    transition: all 3s ease;
+}
+
+.parralax-title{
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-size: calc(14px + 10vw);
+    width: 100%;
+    transition: all 3s ease;
+}
+
+
+
+.trees-no-active{
+    width: 200%;
+    position: absolute;
+    left: -50%;
+    bottom: 0;
+    transition: all 3s ease;
+}
+
+.front_mount-no-active{
+    width: 100%;
+    position: absolute;
+    bottom: -15%;
+    right: 0;
+    transition: all 3s ease;
+}
+
+.mid_mount-no-active{
+    position: absolute;
+    width: 80%;
+    bottom: 12%;
+    left: -20%;
+    transition: all 3s ease;
+}
+
+.back_mount-no-active{
+    position: absolute;
+    width: 80%;
+    right: -30%;
+    bottom: 25%;
+    transition: all 3s ease;
+}
+
+.sun-no-active{
+    position: absolute;
+    width: 10%;
+    left: 10%;
+    top: 80%;
+    transition: all 3s ease;
+}
+
+.clouds-no-active{
+    position: absolute;
+    width: 110%;
+    top: 15%;
+    left: -30%;
+    transition: all 3s ease;
+}
+
+.parralax-title-no-active{
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-size: calc(14px + 7vw);
+    width: 100%;
+    transition: all 3s ease;
+}

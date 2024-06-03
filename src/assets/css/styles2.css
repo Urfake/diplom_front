@@ -1,0 +1,294 @@
+a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+h1{
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 87px;
+    color: #4A8251;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h2{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 56px;
+    text-align: center;
+    color: #2F2E41;
+}
+
+h5{
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #2F2E41;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+}
+
+.locations p, .reviews p, .authorization p, .slider p, .parkMap p{
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 41px;
+    color: #2F2E41;
+}
+
+body{
+    overflow-x: hidden;
+    background: #EFF6F0;
+    margin: 0;
+}
+
+.container{
+    width: 85%;
+    margin: auto;
+}
+
+.center{
+    text-align: center;
+}
+
+.green{
+    background-color: #7EB685;
+}
+
+
+.font{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+
+.row{
+    justify-content: center;
+    display: flex;
+}
+
+
+/* ================= */
+/* SERVICES */
+
+.mainServices{
+    margin-top: 2%;
+}
+
+.mainServices .row{
+    justify-content: space-between;
+    position: relative;
+    height: 100%;
+}
+
+.mainServices .row .title{
+    width: 50%;
+    float: left;
+    padding-top: 20%;
+}
+
+.mainServices .row .title h1{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc(1.3rem + 2vw);
+    line-height: calc(1.5rem + 2vw);
+    text-transform: none;
+    text-align: start;
+    color: #7EB685;
+}
+
+.mainServices .row .title h1 span{
+    color: #4A8251;
+}
+
+.mainServices .row .image{
+    width: 45%;
+    float: right;
+}
+
+.mainServices .row .image img{
+    width: 100%;
+    height: 78%;
+    object-fit: cover;
+    border-radius: 2vw;
+}
+
+.mainServices .scroll{
+    position: absolute;
+    z-index: 1;
+    width: 10vw;
+    top: 5vh;
+    left: 49%;
+    text-align: center;
+}
+
+.mainServices .scroll .first{
+    height: 9vw;
+    width: 9vw;
+    border-radius: 10vw;
+    border: 0.25vw solid #FFFFFF;
+    margin: 1vh 0;
+}
+
+.mainServices .scroll .second{
+    height: 7vw;
+    width: 7vw;
+    border-radius: 10vw;
+    border: 0.25vw solid #FFFFFF;
+    margin: 1vh 0;
+}
+
+.mainServices .scroll .third{
+    height: 5vw;
+    width: 5vw;
+    border-radius: 10vw;
+    border: 0.25vw solid #FFFFFF;
+    margin: 1vh 0;
+}
+
+/* =================== */
+/* SIGN IN */
+
+.sign{
+    width: 70%;
+    background-color: #FFFFFF;
+    margin: 5% auto 0;
+    padding: 2%;
+    border-radius: 2%;
+}
+
+.sign .logo{
+    text-align: center;
+}
+
+.sign .logo img{
+    width: 10%;
+}
+
+.sign .row .email{
+    width: 30%;
+    float: left;
+    padding: 1% 3%;
+}
+
+.sign .row .email input{
+    width: 100%;
+}
+
+.check{
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.check+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+
+.check+label::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #2F2E41;
+    border-radius: 0.25em;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+  }
+
+  .check:checked+label::before {
+    border-color: #0b76ef;
+    background-color: #0b76ef;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+  }
+
+.sign .row .password{
+    width: 30%;
+    float: left;
+    padding: 1% 3%;
+}
+
+.sign .row .password input{
+    width: 100%;
+}
+
+.sign .buttons{
+    margin: 2% auto 1%;
+    width: 50%;
+}
+
+.sign .signFont{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    color: #2F2E41;
+}
+
+.sign .buttons .signInButton{
+    padding: 2.5% 0;
+    background: #7EB685;
+    border-radius: 10px;
+    border: none;
+    color: #FFFFFF;
+    width: 100%;
+}
+
+.sign .signUpButton{
+    padding: 2.5% 0;
+    background: #EE5B46;
+    border-radius: 10px;
+    border: none;
+    color: #FFFFFF;
+    width: 100%;
+}
+
+.sign .fields{
+    width: 40%;
+    margin: 1% auto;
+}
+
+.sign .fields input{
+    width: 100%;
+}
+
+.sign .title{
+    padding: 1% 0;
+    margin: 0;
+}
+
+.sign input{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    border: 1px solid rgba(41, 45, 50, 0.8);
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+@media only screen and (min-width: 768px) {
+    
+}

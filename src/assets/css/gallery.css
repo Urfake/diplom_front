@@ -1,0 +1,272 @@
+
+
+*, *:after, *:before { -webkit-box-sizing: border-box; box-sizing: border-box; }
+.clearfix:before, .clearfix:after { display: table; content: ''; }
+.clearfix:after { clear: both; }
+
+h3{	
+	font-weight: 400;
+	font-family: 'Raleway', Arial, sans-serif;
+	color: #fff;
+	font-weight: bold;
+}
+
+.content {
+	margin: 3% auto 10%;
+	max-width: 100%;
+}
+
+.grid {
+	max-width: 100%;
+	display: grid;
+	text-align: center;
+}
+
+.grid .card {
+	display: block;
+	position: relative;
+	float: left;
+	overflow: hidden;
+	width: 100%;
+	background: #3085a3;
+	text-align: center;
+	cursor: pointer;
+}
+
+.grid .card img{
+	position: relative;
+	display: block;
+	min-width: 100%;
+	max-height: 100%;
+	opacity: 0.8;
+}
+
+.grid .card .card_caption{
+	word-wrap: break-word;
+	position: absolute;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.grid .card:first-child{
+	margin-left: 0;
+}
+
+.grid .card:last-child{
+	margin-right: 0;
+}
+
+.grid .card .card_caption::before,
+.grid .card .card_caption::after {
+	pointer-events: none;
+}
+
+.grid .card .card_caption,
+.grid .card .card_caption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+.grid .card .card_caption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+.grid .card h3 {
+	word-spacing: -0.15em;
+	font-weight: 600;
+}
+
+.grid .card h3 span {
+	font-weight: 400;
+	color: white;
+	margin-right: 5px;
+}
+
+.grid .card h3,
+.grid .card p {
+	margin: 0;
+}
+
+.grid .card p {
+	letter-spacing: 1px;
+}
+
+.card.effect img {
+	max-width: none;
+	width: -webkit-calc(100% + 50px);
+	width: calc(100% + 50px);
+	opacity: 0.7;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(-40px,0, 0);
+	transform: translate3d(-40px,0,0);
+}
+
+.card.effect .card_caption {
+	text-align: left;
+	top: 50%;
+}
+
+.card.effect .card_caption > div {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 5%;
+	width: 100%;
+	height: 100%;
+}
+
+.card.effect .card_caption{
+	-webkit-transform: translate3d(0,40px,0);
+	transform: translate3d(0,0,0);
+}
+
+.card.effect h3 {
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+}
+
+.card.effect p {
+	color: rgba(255,255,255,0.9);
+	opacity: 0;
+	-webkit-transition: opacity 0s, -webkit-transform 0.25s;
+	transition: opacity 0.2s, transform 0.35s;
+}
+
+.card.effect:hover img,
+.card.effect:hover p {
+	opacity: 1;
+}
+
+.card.effect:hover .card_caption{
+	-webkit-transform: translate3d(0,-10%,0);
+	transform: translate3d(0,-10%,0);
+}
+
+.card.effect:hover .card_caption{
+	-webkit-transition-delay: 0.15s;
+	transition-delay: 0.15s;
+	-webkit-transition-duration: 0.25s;
+	transition-duration: 0.25s;
+}
+
+.card.effect:hover p {
+	-webkit-transition-delay: 0.15s;
+	transition-delay: 0.15s;
+	-webkit-transition-duration: 0.25s;
+	transition-duration: 0.25s;
+}
+
+.blue {
+	background-color: #17819c;
+}
+
+.card.blue img {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+.card.blue:hover img {
+	opacity: 0.5;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(1.15);
+	transform: scale(1.15);
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	.grid{
+		gap: 0.5%;
+	}
+	.grid .card {
+		height: 102vw;
+	}
+	.content{
+		margin: 3% auto 50vw;
+	}
+	h3{
+		font-size: calc(0.8em + 1.4vw);
+	}
+	.grid .card p {
+		font-size: calc(9px + 0.5vw);
+	}	
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	.grid{
+		grid-template-columns: repeat(2, 48%);
+		grid-row-gap: 1%;
+		grid-column-gap: 4%;
+	}
+	.grid .card {
+		height: 50vw;
+	}
+	.content{
+		margin: 3% auto 22%;
+	}
+	h3{
+		font-size: calc(0.7em + 1vw);
+	}
+	.grid .card p {
+		font-size: calc(0.35em + 0.5vw);
+	}	
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	.grid{
+		grid-template-columns: repeat(3, 30%);
+		row-gap: 3%;
+		column-gap: 4%;
+	}
+	.grid .card {
+		height: 32.5vw;
+	}
+	.content{
+		margin: 3% auto 22%;
+	}
+	h3{
+		font-size: calc(0.5em + 1vw);
+	}
+	.grid .card p {
+		font-size: calc(0.3em + 0.5vw);
+	}	
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+	.grid{
+		grid-template-columns: repeat(4, 22%);
+		gap: 4%;
+	}
+	.grid .card {
+		height: 23vw;
+	}
+	.content{
+		margin: 3% auto 8%;
+	}
+	h3{
+		font-size: calc(0.3em + 1vw);
+	}
+	.grid .card p {
+		font-size: calc(0.18em + 0.5vw);
+	}	
+}

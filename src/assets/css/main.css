@@ -1,0 +1,488 @@
+body
+{
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.locations{
+    width: 100%;
+    justify-content: center;
+}
+
+.locations h4
+{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 109.5%;
+    margin-left: 20px;
+}
+
+.locations h1, h2{
+    margin: 0px;
+}
+
+.photo{
+    width: 100%;
+    background: #DEEDE0;
+    border-radius: 30px;
+    margin: 0 5% 0 0;
+}
+
+.photo img{
+    width: 100%;
+    height: 250px;
+    border-radius: 30px;
+}
+
+.photo:last-child{
+    margin: 0;
+}
+.locations .row .photo .btntext
+{
+    justify-content: center;
+}
+
+.locations .row .photo .btntext #moreBtn
+{
+    padding: 10px 16px;
+}
+
+.locations .row .photo .btntext #moreBtn:hover{
+    background-color:#7EB685;
+    color: white;
+}
+
+.house1
+{
+    width: 100%;
+    margin-top: 5%;
+    position: relative;
+}
+.house1 img{
+    width: 100%;
+}
+
+.house1 h4
+{
+    position: absolute;
+    top: 70%;
+    width: 100%;
+    font-family: 'Roboto';
+    text-align: center;
+}       
+
+.slider{
+    width: 100%;
+}
+
+.gallery-slide
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 23%;
+    height: 100%;
+    background: #7EB685;
+    border-radius: 7px;
+    margin: 30px 55px 0 0;
+}
+
+.gallery-slide:last-child{
+    margin-right: 0;
+}
+
+.gallery-slide-inside
+{
+    background-color: gray;
+    width: 10%;
+    height: 7%;
+    background: #C4C4C4;
+    border-radius: 2px;
+}
+
+.locations{
+    padding: 5% 0;
+    width: 100%;
+    justify-content: center;
+}
+
+.locations h4
+{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+}
+
+.locations h1, h2{
+    margin: 0px;
+}
+
+.photo{
+    width: 30%;
+    height: 100%;
+    background: #DEEDE0;
+    border-radius: 30px;
+    margin: 0 5% 0 0;
+}
+
+.photo img{
+    width: 100%;
+    height: 22vw;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.photo:last-child{
+    margin: 0;
+}
+
+.authorization{
+    text-align: center;
+    background: #FFFFFF;
+    border-radius: 30px;
+    justify-content: center;
+}
+.now-button{
+    border-radius: 45px;
+}
+.now-button:hover{
+    background-color: inherit;
+    border:#7EB685 solid 2px;
+    color:#7EB685;
+}
+.house1
+{
+    width: 100%;
+    margin-top: 5%;
+    position: relative;
+}
+
+.authorization a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.house1 h4
+{
+    position: absolute;
+    top: 80%;
+    width: 100%;
+    font-size: 40px;
+    font-family: 'Roboto';
+    text-align: center;
+    margin-right: 8%;
+}   
+
+.gallery-slide
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: #7EB685;
+    border-radius: 7px;
+    margin: 3% 3% 0 0;
+    width: 33%;
+}
+
+.gallery-slide img{
+    width: 100%;
+}
+
+.gallery-slide:last-child{
+    margin-right: 0;
+}
+
+.gallery-slide-inside
+{
+    background-color: gray;
+    width: 10%;
+    height: 7%;
+    background: #C4C4C4;
+    border-radius: 2px;
+}
+
+.locations .row .photo #moreBtn
+{
+    background-color: inherit;
+    float: right;
+    font-size: 16px;
+    border: 1px solid #7EB685;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+    margin: 1.5% 5% 5% 0;
+    color: #7EB685;
+}
+
+.house h4
+{
+    position: relative;
+    width: 980px;
+    height: 75px;
+    left: 470px;
+    top: 956px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 75px;
+}
+
+.btntext
+{
+    justify-content: center;
+    align-content: center;
+}
+
+.btntext h4
+{
+    color: #FDBB46; 
+    float: left;
+    text-align: center;
+}
+
+.slider,
+.parkMap{
+        margin-top: 5%;
+}
+
+.col-6{
+    width: 48%;
+    float: left;
+}
+
+.locations button{
+    width: unset;
+    line-height: unset;
+    min-width: unset;
+}
+.parkMap iframe
+{
+    margin: 5% 0;
+    width: 100%;
+}
+
+@media screen and (max-width: 600px){
+    .locations .row .photo h4
+    {
+        font-size: calc(0.4em + 1vw);
+        text-align: center;
+        width: 90%;
+        margin: 5% auto;
+    }
+
+    .locations .row .photo img
+    {
+        width: 100%;
+    }
+
+    .locations .row .photo .btntext h4
+    {
+        display: none;
+    }
+
+    .locations .row .photo .btntext #moreBtn
+    {
+        font-size: calc(0.5em + 1vw);
+        padding: 5% 3%;
+        width: 87%;
+        margin: 3% 6% 7%;
+        text-align: center;
+        float: none;
+    }
+    .locations h1
+    {
+        font-size: calc(1em + 1vw);
+        line-height: calc(1.5em + 1vw);
+        margin: 0 0 2%;
+    }
+
+    .house1{
+        margin: 3% 0;
+        width: 100%;
+    }
+    .house1 h4{
+        font-size: calc(1em + 1vw);
+    }
+    .authorization{
+        margin: 6% 0;
+        padding: 2% 0 5%;
+    }
+    .authorization .row{
+        display: inline-block;
+    }
+    .authorization .row .col-6{
+        float: left;
+        width: 100%;
+    }
+    .authorization .now-button
+    {
+        font-size: calc(0.7em + 1vw);
+        padding: 2% 5%;
+    }
+    .authorization p
+    {
+        font-size: calc(0.8em + 1vw);
+        line-height: 110%;
+    }
+    
+    .slider h2, .parkMap h2
+    {
+        font-size: calc(1em + 1vw);
+        line-height: 110%;
+        margin: 0;
+        padding: 0;
+    }
+
+}
+
+@media screen and (min-width: 600px){
+    .slider h2, .parkMap h2
+    {
+        font-size: calc(1em + 1vw);
+        line-height: 110%;
+        margin: 0;
+        padding: 0;
+    }
+    .locations h1
+    {
+        font-size: calc(1.2em + 1vw);
+        line-height: 120%;
+        margin: 0 0 3%;
+    }
+    .locations .row .photo .btntext h4
+    {
+        display: none;
+    }
+    .locations .row .photo
+    {
+        text-align: center;
+    }
+    .locations .row .photo .btntext #moreBtn
+    {
+        font-size: calc(0.4em + 1vw);
+        line-height: 105%;
+        width: 80%;
+        padding: 4%;
+        position: relative;
+        bottom: 0;
+        float: none;
+        margin: 5% auto;
+    }
+    .locations .row .photo h4
+    {
+        font-size: calc(0.5em + 1vw);
+        width: 100%;
+        text-align: center;
+        margin: 2% auto;
+    }
+    
+    .house1 h4
+    {
+        font-size: calc(1.2em + 1vw);
+    }
+    .authorization{
+        margin: 6% 0;
+        padding: 2% 0 5%;
+    }
+    .authorization .row{
+        display: inline-block;
+    }
+    .authorization .row .col-6{
+        float: left;
+        width: 100%;
+    }
+    .authorization .row .col-6:last-child{
+        margin-top: 3%;
+    }
+    .authorization .now-button
+    {
+        font-size: calc(0.7em + 1vw);
+        padding: 2% 5%;
+    }
+    .authorization p
+    {
+        font-size: calc(0.8em + 1vw);
+        line-height: 110%;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .slider h2, .parkMap h2
+    {
+        font-size: calc(0.9em + 1vw);
+        line-height: 110%;
+    }
+    .locations .row .photo h4{
+        font-size: calc(0.5em + 1vw);
+    }
+    .locations .row .photo .btntext #moreBtn{
+        font-size: calc(0.3em + 1vw);
+    }
+    
+    .authorization{
+        padding: 2% 0;
+    }
+    .authorization .row{
+        display: flex;
+    }
+    .authorization .row .col-6{
+        float: left;
+        width: 46%;
+    }
+    .authorization .row .col-6:last-child{
+        margin-top: 0;
+    }
+    .authorization .col-6 .button{
+        padding: 12% 0;
+    }
+    .authorization .now-button
+    {
+        font-size: calc(0.7em + 1vw);
+        line-height: 105%;
+        padding: 3% 8%;
+    }
+    .authorization p
+    {
+        line-height: 100%;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .locations .row .photo .btntext #moreBtn{
+        font-size: calc(0.2em + 1vw);
+        padding: 3%;
+    }
+    .locations .row .photo .btntext h4
+    {
+        display: flex;
+        float: left;
+        width: 25%;
+        padding: 6% 0 0 5%;
+        font-size: calc(0.3em + 1vw);
+    }
+    .locations .row .photo .btntext #moreBtn{
+        width: 60%;
+        float: right;
+        margin-right: 5%;
+    }
+
+    .authorization .col-6 p{
+        padding: 4% 0;
+    }
+}
+
+
+.container{
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
